@@ -1,0 +1,367 @@
+---
+title: "Atlas Visual Sulawesi Selatan"
+subtitle: "IPM dan Persentase Penduduk Miskin Kabupaten/Kota, 2023–2025"
+author:
+  - "A. Muh. Faldi Fadhil A. Darsyad — H062261015"
+  - "Riski Aprilianti — H062261014"
+date: "12 Oktober 2026"
+lang: id
+toc: true
+toc-depth: 3
+number-sections: true
+format:
+  html:
+    theme: none
+    embed-resources: true
+    code-fold: true
+    smooth-scroll: true
+    page-layout: article
+    css: atlas-tim7.css
+---
+
+<button id="toc-menu-toggle" type="button" aria-label="Buka daftar isi" aria-controls="TOC" aria-expanded="false"><span></span><span></span><span></span></button>
+
+::: {.lead-intro}
+**Membaca pembangunan manusia dan kemiskinan melalui visualisasi data.** Atlas ini menyatukan grafik distribusi, tren, hubungan antarindikator, peta koroplet, profil wilayah, ketidakpastian bootstrap, dan inferensi visual lineup dalam satu alur eksplorasi.
+:::
+
+# Intisari
+
+Atlas menggunakan data bersih 24 kabupaten/kota di Provinsi Sulawesi Selatan, terdiri atas tiga tahun pengamatan (2023, 2024, 2025) untuk dua indikator: **Indeks Pembangunan Manusia (IPM)** dan **persentase penduduk miskin**. Berkas kerja yang disertakan adalah `Marge_Data_Clean_IPM_Kemiskinan_Sulsel.xlsx`, dengan kolom kode wilayah, nama kabupaten/kota, IPM tiap tahun, dan kemiskinan tiap tahun.
+
+Secara deskriptif, rerata IPM seluruh 24 wilayah meningkat dari **73,84 (2023)** menjadi **74,49 (2024)** dan **75,23 (2025)**. Pada saat yang sama, rerata persentase kemiskinan menurun dari **9,33%** menjadi **8,60%** dan **8,14%**. Pada 2025, IPM tertinggi adalah **Kota Makassar (85,66)** dan terendah **Jeneponto (70,25)**. Kemiskinan terendah tercatat di **Kota Makassar (4,43%)**, sedangkan tertinggi di **Pangkajene dan Kepulauan (11,60%)**.
+
+Korelasi IPM dan kemiskinan pada 2025 sekitar **−0,559**, yang menunjukkan asosiasi negatif sedang: wilayah dengan IPM lebih tinggi cenderung memiliki kemiskinan lebih rendah. Ini adalah hubungan deskriptif, bukan bukti bahwa perubahan IPM secara langsung menyebabkan perubahan kemiskinan. Unit analisis dalam atlas adalah kabupaten/kota; angka rerata antardaerah tidak boleh dibaca sebagai estimasi resmi penduduk berbobot provinsi kecuali metode pembobotan memang diterapkan.
+
+# Makeover: dari grafik awal ke desain yang lebih informatif
+
+Bagian ini membandingkan tampilan awal (*before*) dengan versi perbaikan (*after*). Tujuan makeover adalah memperjelas hierarki visual, meningkatkan kontras, mempertegas pesan utama, dan membuat label/legenda lebih mudah dipindai. Penilaian desain tidak mengubah data yang mendasari grafik.
+
+![Before — grafik awal](assets/2.%20Makeover/Before.jpeg){fig-alt="Before — grafik awal" fig-cap="Before" width=100%}
+
+![After — makeover pertumbuhan IPM Tim 7 v3](assets/2.%20Makeover/makeover_pertumbuhan_ipm_Tim7_v3.png){fig-alt="After — makeover pertumbuhan IPM Tim 7 v3" fig-cap="makeover_pertumbuhan_ipm_Tim7_v3" width=100%}
+
+**Interpretasi makeover.** Grafik *after* dimaksudkan agar pembaca lebih cepat menemukan pola perubahan IPM dan membandingkan wilayah. Saat mengevaluasi makeover, periksa apakah judul menjelaskan pesan, skala tidak menyesatkan, label terbaca, warna konsisten, dan elemen dekoratif tidak mengalahkan data.
+
+# Galeri Statistik
+
+Galeri menyajikan delapan tampilan yang saling melengkapi. Penjelasan di bawah setiap grafik menjelaskan pertanyaan statistik yang dijawab serta batas interpretasinya.
+
+## Distribusi IPM dan kemiskinan per tahun
+
+![Distribusi IPM dan kemiskinan per tahun](assets/3.%20Galeri%20Statistik/g1_sebaran_per_tahun.png){fig-alt="Distribusi IPM dan kemiskinan per tahun" fig-cap="g1_sebaran_per_tahun.png" width=100%}
+
+Rerata IPM meningkat dari 73,84 (2023) menjadi 74,49 (2024) dan 75,23 (2025), sedangkan rerata kemiskinan turun dari 9,33% menjadi 8,60% dan 8,14%. Distribusi juga memperlihatkan variasi antardaerah.
+
+## Sebaran menurut kabupaten dan kota
+
+![Sebaran menurut kabupaten dan kota](assets/3.%20Galeri%20Statistik/g2_sebaran_kab_kota.png){fig-alt="Sebaran menurut kabupaten dan kota" fig-cap="g2_sebaran_kab_kota.png" width=100%}
+
+Pemisahan kabupaten dan kota memperlihatkan heterogenitas spasial. Kota-kota cenderung memiliki IPM lebih tinggi dan kemiskinan relatif rendah, tetapi kategori administratif tidak menjelaskan seluruh variasi.
+
+## Tren kemiskinan 2023–2025
+
+![Tren kemiskinan 2023–2025](assets/3.%20Galeri%20Statistik/g3_tren_kemiskinan.png){fig-alt="Tren kemiskinan 2023–2025" fig-cap="g3_tren_kemiskinan.png" width=100%}
+
+Rerata kemiskinan pada 24 kabupaten/kota menurun sekitar 1,19 poin persentase antara 2023 dan 2025. Tren agregat ini tidak berarti semua wilayah mengalami penurunan yang sama besar.
+
+## Tren IPM 2023–2025
+
+![Tren IPM 2023–2025](assets/3.%20Galeri%20Statistik/g4_tren_ipm.png){fig-alt="Tren IPM 2023–2025" fig-cap="g4_tren_ipm.png" width=100%}
+
+Rerata IPM naik sekitar 1,39 poin selama periode pengamatan. Kenaikan rerata menunjukkan perbaikan umum, tetapi level awal dan laju perubahan tiap wilayah tidak identik.
+
+## Hubungan IPM dan kemiskinan
+
+![Hubungan IPM dan kemiskinan](assets/3.%20Galeri%20Statistik/g5_scatter_ipm_kemiskinan.png){fig-alt="Hubungan IPM dan kemiskinan" fig-cap="g5_scatter_ipm_kemiskinan.png" width=100%}
+
+Pada 2025 korelasi Pearson sekitar −0,559. Wilayah dengan IPM lebih tinggi cenderung memiliki kemiskinan lebih rendah. Hubungan ini asosiasional dan tidak membuktikan sebab-akibat.
+
+## Heatmap indikator antarwilayah
+
+![Heatmap indikator antarwilayah](assets/3.%20Galeri%20Statistik/g6_heatmap.png){fig-alt="Heatmap indikator antarwilayah" fig-cap="g6_heatmap.png" width=100%}
+
+Heatmap membantu menemukan pola relatif wilayah dengan IPM tinggi/rendah dan kemiskinan tinggi/rendah. Nilai harus dibaca bersama skala dan legenda.
+
+## Perubahan indikator antarperiode
+
+![Perubahan indikator antarperiode](assets/3.%20Galeri%20Statistik/g7_lollipop_perubahan.png){fig-alt="Perubahan indikator antarperiode" fig-cap="g7_lollipop_perubahan.png" width=100%}
+
+Dari 2023 ke 2025, rerata IPM naik 1,39 poin dan rerata kemiskinan turun 1,19 poin persentase. Grafik perubahan menekankan besar perubahan, bukan hanya posisi akhir.
+
+## Ringkasan visual gabungan
+
+![Ringkasan visual gabungan](assets/3.%20Galeri%20Statistik/g8_komposisi_patchwork.png){fig-alt="Ringkasan visual gabungan" fig-cap="g8_komposisi_patchwork.png" width=100%}
+
+Panel gabungan mengintegrasikan distribusi, tren, hubungan, dan perbandingan sehingga pola utama dapat dilihat dari beberapa sudut. Skala tiap panel tetap perlu diperhatikan.
+
+# Fungsi Grafik
+
+Bagian ini menampilkan hasil dari `05_Fungsi_Grafik.R`. Grafik peringkat menyoroti posisi akhir tahun 2025; grafik sebaran menunjukkan heterogenitas; sedangkan grafik tren dan scatter menampilkan dinamika dan asosiasi.
+
+## Peringkat IPM 2025
+
+![Peringkat IPM 2025](assets/4.%20Fungsi%20Grafik/peringkat_ipm_2025.png){fig-alt="Peringkat IPM 2025" fig-cap="peringkat_ipm_2025.png" width=100%}
+
+Kota Makassar memiliki IPM tertinggi (85,66), diikuti Kota Palopo (81,74) dan Kota Parepare (81,50). Jeneponto terendah (70,25).
+
+## Peringkat kemiskinan 2025
+
+![Peringkat kemiskinan 2025](assets/4.%20Fungsi%20Grafik/peringkat_kemiskinan_2025.png){fig-alt="Peringkat kemiskinan 2025" fig-cap="peringkat_kemiskinan_2025.png" width=100%}
+
+Kemiskinan terendah terdapat di Kota Makassar (4,43%) dan Kota Parepare (4,44%). Nilai tertinggi terdapat di Pangkajene dan Kepulauan (11,60%), disusul Jeneponto (11,42%).
+
+## Scatter IPM–kemiskinan
+
+![Scatter IPM–kemiskinan](assets/4.%20Fungsi%20Grafik/scatter_ipm_kemiskinan.png){fig-alt="Scatter IPM–kemiskinan" fig-cap="scatter_ipm_kemiskinan.png" width=100%}
+
+Scatterplot menunjukkan asosiasi negatif tingkat sedang (korelasi 2025 sekitar −0,559), tetapi variasi masih besar sehingga IPM tidak sepenuhnya menerangkan kemiskinan.
+
+## Sebaran IPM
+
+![Sebaran IPM](assets/4.%20Fungsi%20Grafik/sebaran_ipm.png){fig-alt="Sebaran IPM" fig-cap="sebaran_ipm.png" width=100%}
+
+Distribusi IPM 2025 memiliki rerata 75,23 dan rentang 70,25–85,66, menunjukkan perbedaan capaian pembangunan manusia antardaerah.
+
+## Sebaran kemiskinan
+
+![Sebaran kemiskinan](assets/4.%20Fungsi%20Grafik/sebaran_kemiskinan.png){fig-alt="Sebaran kemiskinan" fig-cap="sebaran_kemiskinan.png" width=100%}
+
+Rerata kemiskinan 2025 adalah 8,14%, dengan rentang 4,43–11,60%. Kondisi kemiskinan tidak seragam antarwilayah.
+
+## Tren IPM
+
+![Tren IPM](assets/4.%20Fungsi%20Grafik/tren_ipm.png){fig-alt="Tren IPM" fig-cap="tren_ipm.png" width=100%}
+
+Rerata IPM meningkat dari 73,84 pada 2023 ke 75,23 pada 2025.
+
+## Tren kemiskinan
+
+![Tren kemiskinan](assets/4.%20Fungsi%20Grafik/tren_kemiskinan.png){fig-alt="Tren kemiskinan" fig-cap="tren_kemiskinan.png" width=100%}
+
+Rerata kemiskinan turun dari 9,33% pada 2023 menjadi 8,14% pada 2025.
+
+# Peta dan Koroplet
+
+Peta koroplet menghubungkan nilai indikator dengan lokasi geografis kabupaten/kota. Warna mengikuti legenda pada masing-masing peta; perbandingan harus dilakukan menggunakan legenda indikator yang sama. Batas administrasi bersumber dari geoBoundaries ADM2 yang disederhanakan untuk visualisasi, sehingga peta ini ditujukan untuk eksplorasi statistik, bukan penentuan batas hukum atau pengukuran presisi.
+
+## IPM 2025
+
+![Peta koroplet IPM 2025 Tim 7](assets/5.%20Peta%20dan%20Koroplet/peta_ipm_2025_Tim7.png){fig-alt="Peta koroplet IPM 2025 Tim 7" fig-cap="peta_ipm_2025_Tim7.png" width=100%}
+
+Peta IPM memperlihatkan variasi spasial capaian pembangunan manusia. Kota Makassar memiliki nilai tertinggi dalam data, sementara Jeneponto terendah. Peta membantu melihat pola lokasi, tetapi tidak menggantikan pemeriksaan nilai dan konteks wilayah.
+
+## Kemiskinan 2025
+
+![Peta koroplet kemiskinan 2025 Tim 7](assets/5.%20Peta%20dan%20Koroplet/peta_kemiskinan_2025_Tim7.png){fig-alt="Peta koroplet kemiskinan 2025 Tim 7" fig-cap="peta_kemiskinan_2025_Tim7.png" width=100%}
+
+Peta kemiskinan memperlihatkan ketimpangan antardaerah. Pangkajene dan Kepulauan serta Jeneponto termasuk nilai tertinggi, sedangkan Kota Makassar dan Kota Parepare termasuk terendah. Pola geografis sebaiknya dibaca bersama grafik peringkat dan informasi sosial-ekonomi lain.
+
+## Pemeriksaan palet untuk aksesibilitas
+
+Pemeriksaan berikut menunjukkan simulasi keterlihatan warna pada peta. Simulasi membantu menilai apakah kelas warna masih dapat dibedakan pada kondisi persepsi warna tertentu; ini bukan jaminan aksesibilitas penuh. Label kelas, legenda, dan kontras tetap perlu dipertahankan.
+
+### Uji buta warna IPM 2025
+
+![Uji buta warna IPM 2025](assets/5.%20Peta%20dan%20Koroplet/uji_buta_warna_ipm_2025_Tim7.png){fig-alt="Uji buta warna IPM 2025" fig-cap="uji_buta_warna_ipm_2025_Tim7.png" width=100%}
+
+### Uji buta warna kemiskinan 2025
+
+![Uji buta warna kemiskinan 2025](assets/5.%20Peta%20dan%20Koroplet/uji_buta_warna_kemiskinan_2025_Tim7.png){fig-alt="Uji buta warna kemiskinan 2025" fig-cap="uji_buta_warna_kemiskinan_2025_Tim7.png" width=100%}
+
+# Profil 24 Kabupaten dan Kota
+
+Setiap panel profil menyatukan informasi indikator untuk satu kabupaten/kota agar perbedaan level dan perubahan sepanjang 2023–2025 dapat diperiksa secara lokal. Untuk menghindari kesimpulan berlebihan, baca setiap panel berdasarkan sumbu, satuan, dan legenda yang ditampilkan. Profil wilayah melengkapi ringkasan provinsi, bukan menggantikannya.
+
+## Bantaeng
+
+![Profil Bantaeng](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Bantaeng.png){fig-alt="Profil Bantaeng" fig-cap="profil_Bantaeng.png" width=100%}
+
+## Barru
+
+![Profil Barru](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Barru.png){fig-alt="Profil Barru" fig-cap="profil_Barru.png" width=100%}
+
+## Bone
+
+![Profil Bone](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Bone.png){fig-alt="Profil Bone" fig-cap="profil_Bone.png" width=100%}
+
+## Bulukumba
+
+![Profil Bulukumba](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Bulukumba.png){fig-alt="Profil Bulukumba" fig-cap="profil_Bulukumba.png" width=100%}
+
+## Enrekang
+
+![Profil Enrekang](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Enrekang.png){fig-alt="Profil Enrekang" fig-cap="profil_Enrekang.png" width=100%}
+
+## Gowa
+
+![Profil Gowa](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Gowa.png){fig-alt="Profil Gowa" fig-cap="profil_Gowa.png" width=100%}
+
+## Jeneponto
+
+![Profil Jeneponto](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Jeneponto.png){fig-alt="Profil Jeneponto" fig-cap="profil_Jeneponto.png" width=100%}
+
+## Kepulauan Selayar
+
+![Profil Kepulauan Selayar](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Kepulauan_Selayar.png){fig-alt="Profil Kepulauan Selayar" fig-cap="profil_Kepulauan_Selayar.png" width=100%}
+
+## Kota Makassar
+
+![Profil Kota Makassar](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Kota_Makassar.png){fig-alt="Profil Kota Makassar" fig-cap="profil_Kota_Makassar.png" width=100%}
+
+## Kota Palopo
+
+![Profil Kota Palopo](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Kota_Palopo.png){fig-alt="Profil Kota Palopo" fig-cap="profil_Kota_Palopo.png" width=100%}
+
+## Kota Parepare
+
+![Profil Kota Parepare](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Kota_Parepare.png){fig-alt="Profil Kota Parepare" fig-cap="profil_Kota_Parepare.png" width=100%}
+
+## Luwu
+
+![Profil Luwu](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Luwu.png){fig-alt="Profil Luwu" fig-cap="profil_Luwu.png" width=100%}
+
+## Luwu Timur
+
+![Profil Luwu Timur](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Luwu_Timur.png){fig-alt="Profil Luwu Timur" fig-cap="profil_Luwu_Timur.png" width=100%}
+
+## Luwu Utara
+
+![Profil Luwu Utara](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Luwu_Utara.png){fig-alt="Profil Luwu Utara" fig-cap="profil_Luwu_Utara.png" width=100%}
+
+## Maros
+
+![Profil Maros](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Maros.png){fig-alt="Profil Maros" fig-cap="profil_Maros.png" width=100%}
+
+## Pangkajene Dan Kepulauan
+
+![Profil Pangkajene Dan Kepulauan](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Pangkajene_Dan_Kepulauan.png){fig-alt="Profil Pangkajene Dan Kepulauan" fig-cap="profil_Pangkajene_Dan_Kepulauan.png" width=100%}
+
+## Pinrang
+
+![Profil Pinrang](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Pinrang.png){fig-alt="Profil Pinrang" fig-cap="profil_Pinrang.png" width=100%}
+
+## Sidenreng Rappang
+
+![Profil Sidenreng Rappang](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Sidenreng_Rappang.png){fig-alt="Profil Sidenreng Rappang" fig-cap="profil_Sidenreng_Rappang.png" width=100%}
+
+## Sinjai
+
+![Profil Sinjai](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Sinjai.png){fig-alt="Profil Sinjai" fig-cap="profil_Sinjai.png" width=100%}
+
+## Soppeng
+
+![Profil Soppeng](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Soppeng.png){fig-alt="Profil Soppeng" fig-cap="profil_Soppeng.png" width=100%}
+
+## Takalar
+
+![Profil Takalar](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Takalar.png){fig-alt="Profil Takalar" fig-cap="profil_Takalar.png" width=100%}
+
+## Tana Toraja
+
+![Profil Tana Toraja](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Tana_Toraja.png){fig-alt="Profil Tana Toraja" fig-cap="profil_Tana_Toraja.png" width=100%}
+
+## Toraja Utara
+
+![Profil Toraja Utara](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Toraja_Utara.png){fig-alt="Profil Toraja Utara" fig-cap="profil_Toraja_Utara.png" width=100%}
+
+## Wajo
+
+![Profil Wajo](assets/6.%20Profil%2024%20Kabupaten%20dan%20Kota/profil_Wajo.png){fig-alt="Profil Wajo" fig-cap="profil_Wajo.png" width=100%}
+
+# Ketidakpastian Bootstrap
+
+Bootstrap menilai kestabilan ringkasan melalui pengambilan sampel ulang. Grafik bootstrap kelompok dan wilayah menunjukkan variasi hasil pada skenario resampling yang digunakan oleh Tim 7. Sebaran yang lebih rapat biasanya mengindikasikan estimasi yang lebih stabil; sebaran yang lebar menunjukkan ketidakpastian lebih besar. Interpretasi inferensial harus mengikuti unit resampling dan prosedur yang digunakan dalam skrip—grafik ini bukan interval kausal.
+
+## Bootstrap berdasarkan kelompok
+
+![Grafik bootstrap kelompok](assets/7.%20Ketidakpastian%20Boostrap/grafik_bootstrap_kelompok.png){fig-alt="Grafik bootstrap kelompok" fig-cap="grafik_bootstrap_kelompok.png" width=100%}
+
+Grafik ini membandingkan variasi ringkasan hasil resampling antar kelompok yang didefinisikan dalam analisis. Perbedaan pusat dan lebar distribusi dapat memberi petunjuk tentang heterogenitas, tetapi ketidakpastian tidak boleh dinilai dari tinggi batang saja tanpa memperhatikan skala sumbu.
+
+## Bootstrap berdasarkan wilayah
+
+![Grafik bootstrap wilayah](assets/7.%20Ketidakpastian%20Boostrap/grafik_bootstrap_wilayah.png){fig-alt="Grafik bootstrap wilayah" fig-cap="grafik_bootstrap_wilayah.png" width=100%}
+
+Grafik ini menampilkan variasi hasil resampling pada unit wilayah. Wilayah dengan hasil yang lebih bervariasi pada bootstrap dapat memerlukan kehati-hatian lebih tinggi saat menyimpulkan kestabilan ringkasannya.
+
+# Inferensi Visual Lineup
+
+Lineup membandingkan satu panel data asli dengan panel-panel pembanding/permutasi. Tujuannya adalah menguji apakah pola data asli cukup terlihat untuk dibedakan secara visual dari pola yang dapat muncul secara kebetulan. Hasil berikut diambil dari berkas laporan lineup yang disertakan dalam paket Tim 7.
+
+## Lineup 20 panel
+
+![Lineup 20 panel Tim 7](assets/8.%20Inferensi%20Visual%20Lineup/lineup_20panel_Tim7.png){fig-alt="Lineup 20 panel Tim 7" fig-cap="lineup_20panel_Tim7.png" width=100%}
+
+Panel data asli yang terverifikasi adalah **panel 4**. Kunci ini sebaiknya tidak diperlihatkan kepada pengamat sebelum penilaian dilakukan agar tidak menimbulkan bias.
+
+## Ringkasan hasil lineup
+
+![Grafik hasil lineup Tim 7](assets/8.%20Inferensi%20Visual%20Lineup/grafik_lineup_Tim7.png){fig-alt="Grafik hasil lineup Tim 7" fig-cap="grafik_lineup_Tim7.png" width=100%}
+
+Laporan Tim 7 mencatat **12 pengamat valid**, **10 jawaban benar**, proporsi benar **0,8333**, dan *p-value* visual **5,873 × 10⁻¹²**. Dengan taraf signifikansi 0,05, hasil yang dilaporkan signifikan: panel data asli dapat dibedakan secara visual dari panel permutasi lebih baik daripada yang diharapkan berdasarkan mekanisme tebakan yang digunakan. Kunci terverifikasi mencatat korelasi IPM–kemiskinan 2025 sebesar **−0,559** dan peringkat |r| panel asli **1 dari 20**. Hasil lineup mendukung keterlihatan pola asosiasi pada tampilan ini, bukan klaim sebab-akibat.
+
+# Fungsi dan Reprodusibilitas
+
+Analisis disusun dalam skrip R terpisah agar setiap tahap dapat dijalankan dan ditelusuri. Susunan berikut mengikuti nama berkas yang tersedia pada repositori GitHub Tim 7.
+
+- `00_Run_All.R` — skrip utama untuk menjalankan alur analisis.
+- `01_Preparing_Data.R` — menyiapkan dan merapikan data sebelum analisis.
+- `02_Tema_Tim_7.R` — mengatur tema visual yang digunakan pada grafik.
+- `03_Makeover.R` — menghasilkan grafik makeover *before–after*.
+- `04_Galeri_Grafik_Statistik.R` — menghasilkan galeri grafik statistik.
+- `05_Fungsi_Grafik.R` — membuat grafik peringkat, scatter, sebaran, dan tren.
+- `06_Grafik_Profil_24_Kab_Kota.R` — menghasilkan grafik profil 24 kabupaten/kota.
+- `07_Peta_Koroplet.R` — menghasilkan visualisasi peta koroplet.
+- `08_Ketidakpastian_Bootstrap95%.R` — menganalisis dan memvisualisasikan ketidakpastian bootstrap 95%.
+- `09_Inferensi_Visual_Lineup20_Panel.R` — menyiapkan inferensi visual menggunakan lineup 20 panel.
+- `10_Analisis_Lineup.R` — menganalisis hasil lineup.
+- `11_Ggproto.R` — skrip tambahan terkait `ggproto`.
+
+Untuk menjalankan ulang analisis, buka repositori di RStudio, pastikan paket yang dibutuhkan tersedia, lalu jalankan `00_Run_All.R` dari direktori proyek. Jika ingin menjalankan tahap tertentu saja, jalankan skrip terkait setelah tahap persiapannya selesai. Grafik yang tampil di halaman atlas merupakan hasil ekspor; perubahan data baru akan tercermin setelah skrip dijalankan ulang dan atlas dirender kembali.
+# Keterbatasan
+
+1. Data hanya mencakup 24 kabupaten/kota dan tiga tahun (2023–2025), sehingga tidak cukup untuk menyimpulkan tren jangka panjang.
+2. Analisis bersifat deskriptif dan asosiasional; korelasi tidak membuktikan sebab-akibat.
+3. Rerata sederhana antarwilayah memberi bobot sama pada setiap kabupaten/kota, bukan bobot jumlah penduduk.
+4. Peta menggunakan batas ADM2 yang disederhanakan untuk visualisasi; detail garis batas tidak dimaksudkan untuk penggunaan legal atau survei presisi.
+5. Klasifikasi warna dapat memengaruhi kesan perbedaan pada peta; interpretasi perlu memperhatikan legenda dan nilai numerik.
+6. Bootstrap dan lineup bergantung pada prosedur, asumsi resampling/permutasi, serta jumlah pengamat yang digunakan. Kesimpulan tidak boleh dilepaskan dari rancangan tersebut.
+7. File atlas mengandung gambar statis; grafik tidak otomatis berubah ketika data sumber diperbarui. Untuk pembaruan, jalankan kembali skrip analisis dan render dokumen.
+
+# Deklarasi Penggunaan AI
+
+AI digunakan sebagai alat bantu penyusunan struktur narasi atlas, perapian bahasa, dan penyusunan interpretasi awal berdasarkan data dan visual yang disediakan Tim 7. AI tidak menggantikan verifikasi data, pemilihan metode, atau penilaian akademik penulis. Nilai numerik yang disebutkan dihitung dari berkas Excel yang disertakan atau dikutip dari laporan lineup Tim 7. Penulis bertanggung jawab untuk memeriksa ulang seluruh angka, kode, sitasi, dan interpretasi sebelum publikasi atau penyerahan tugas.
+
+# Sumber Data
+
+- **Badan Pusat Statistik Provinsi Sulawesi Selatan** — data Indeks Pembangunan Manusia dan persentase penduduk miskin, 2023–2025. Pastikan publikasi/tabel BPS yang tepat dicantumkan pada repositori agar seri dan definisi indikator dapat diverifikasi.
+- **geoBoundaries** — batas administratif ADM2 yang disederhanakan untuk visualisasi. Keterangan penggunaan terdapat pada `data/data-batas-peta/CITATION-AND-USE-geoBoundaries.txt` di repositori sumber.
+- **Data olahan Tim 7** — `Marge_Data_Clean_IPM_Kemiskinan_Sulsel.xlsx` yang disertakan bersama aset atlas.
+- **Repositori GitHub Tim 7:** <https://github.com/faldifadhil23-uh/tim7-atlas-sulsel/tree/main>
+
+---
+*Atlas Visual Sulawesi Selatan · Tim 7 · Komputasi Statistika Lanjut*
+
+<script>
+(function(){
+  const button = document.getElementById('toc-menu-toggle');
+  const toc = document.getElementById('TOC');
+  if (!button || !toc) return;
+  function closeMenu(){
+    toc.classList.remove('toc-open');
+    button.setAttribute('aria-expanded','false');
+    button.setAttribute('aria-label','Buka daftar isi');
+  }
+  button.addEventListener('click', function(){
+    const isOpen = toc.classList.toggle('toc-open');
+    button.setAttribute('aria-expanded', String(isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Tutup daftar isi' : 'Buka daftar isi');
+  });
+  toc.addEventListener('click', function(event){
+    if (event.target.closest('a')) closeMenu();
+  });
+  document.addEventListener('keydown', function(event){ if(event.key === 'Escape') closeMenu(); });
+  window.addEventListener('resize', function(){ if(window.innerWidth > 900) closeMenu(); });
+})();
+</script>
